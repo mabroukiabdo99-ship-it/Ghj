@@ -1,0 +1,93 @@
+<html>
+<head>
+      <meta charset="UTF-8">  
+      <title>LGOUMI</title>
+      <style>
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: #444; /* خلفية رمادية */
+  overflow: hidden;
+  position: relative;
+}
+
+/* حركة الضباب */
+@keyframes fog {
+  0%   { transform: translate(0, 0); opacity: 0.4; }
+  50%  { transform: translate(40px, -30px); opacity: 0.7; }
+  100% { transform: translate(-40px, 30px); opacity: 0.4; }
+}
+
+/* طبقة الضباب الأولى */
+body::before {
+  content: "";
+  position: absolute;
+  top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+  animation: fog 30s linear infinite;
+  z-index: -1;
+}
+
+/* طبقة الضباب الثانية (تعطي عمق أكثر) */
+body::after {
+  content: "";
+  position: absolute;
+  top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(circle, rgba(200,200,200,0.15) 0%, transparent 70%);
+  animation: fog 60s linear infinite reverse;
+  z-index: -1;
+}
+      </style>
+</head>
+<body>
+      <div>
+        <center> <b><h1 style="font-size:  text-align: center; margin:0; font-family: 'Georgia', serif; font-style: italic; font-weight: bold; text-decoration: underline;">
+  <span style="color: red;">WELCOME</span> 
+  <span style="color: blue;">TO</span> 
+  <span style="color: green;">LGOUMI
+    <span style="color: orange;">SITE
+  </span></b></center>
+      </div>
+      <div>
+            <br><h2 style="color: blanc;"> 🍆PHOTOS OF ADAM LGOUMI</h2></br>
+      </div>
+          <div>
+            <img src="photo/گومينيو.jpg"  width="200" height="220"/>
+          </div>      
+            <div>
+ للمزيد من صور أسطورتنا الحية: 
+              <a href="lgoumi.html"> cliquer ici⛔️ </a>
+            </div>
+           <div>
+             <br/> <h2 style="color: violet;">THE BEST AUDIO OF KING 🔥🔥</he>
+              </div>   
+          <div>
+             <audio controls>
+               <source src="Audio/AUD-20250616-WA0746.opus">
+             </audio>
+          <div>
+             <audio controls>
+               <source src="Audio/AUD-20250616-WA0752.opus">
+             </audio>
+          </div>  
+            <div>
+             <audio controls>
+               <source src="Audio/AUD-20250706-WA0239.opus">
+             </audio>
+                 </div>
+            <div>
+             <audio controls>
+               <source src="Audio/AUD-20250907-WA0211.m4a">
+             </audio>
+            </div>
+            <div>
+             <audio controls>
+               <source src="Audio/l-morphine-raid-sommaire.mp3">
+             </audio>
+            </div>
+        </body>
+</html>
